@@ -1,0 +1,300 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+}
+
+/* ================= HEADER ================= */
+
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+header{
+    background:#fff;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.navbar{
+    height:90px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:34px;
+    font-weight:700;
+}
+
+.logo span{
+    color:#b8894f;
+}
+
+.menu{
+    display:flex;
+    gap:40px;
+    list-style:none;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#222;
+    font-weight:500;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:#b8894f;
+}
+
+.btn{
+    background:#b8894f;
+    color:#fff;
+    padding:14px 28px;
+    border-radius:8px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#a8773d;
+}
+
+/* ================= JUDUL ================= */
+
+.portfolio-header{
+    text-align:center;
+    padding:70px 20px 40px;
+}
+
+.portfolio-header h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.portfolio-header p{
+    font-size:18px;
+    color:#666;
+}
+
+/* ================= KATEGORI ================= */
+
+.category{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:45px;
+}
+
+.category button{
+    padding:14px 28px;
+    border:none;
+    border-radius:40px;
+    background:#fff;
+    cursor:pointer;
+    font-size:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.category button:hover{
+    background:#b8894f;
+    color:#fff;
+}
+
+.active{
+    background:#b8894f !important;
+    color:#fff;
+}
+
+/* ================= GALLERY ================= */
+
+.gallery{
+
+    width:90%;
+    max-width:1050px;
+    margin:0 auto;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:22px;
+
+    padding-bottom:80px;
+
+}
+
+/* ================= CARD ================= */
+
+.card{
+
+    background:#fff;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 10px 22px rgba(0,0,0,.12);
+
+}
+
+.card img{
+
+    width:100%;
+
+    height:200px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.35s;
+
+}
+
+.card:hover img{
+
+    transform:scale(1.04);
+
+}
+
+/* ================= INFO ================= */
+
+.info{
+
+    padding:18px;
+
+}
+
+.info h3{
+
+    font-size:22px;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+    color:#222;
+
+}
+
+.info p{
+
+    font-size:15px;
+
+    color:#777;
+
+    line-height:1.5;
+
+}
+
+.price strong{
+
+    color:#555;
+
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width:992px){
+
+.gallery{
+
+grid-template-columns:repeat(2,1fr);
+
+max-width:90%;
+
+}
+
+}
+
+/* ================= HP ================= */
+
+@media (max-width:768px){
+
+.navbar{
+
+flex-direction:column;
+
+height:auto;
+
+padding:20px 0;
+
+gap:15px;
+
+}
+
+.menu{
+
+gap:20px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.portfolio-header h1{
+
+font-size:36px;
+
+}
+
+.portfolio-header p{
+
+font-size:16px;
+
+}
+
+.gallery{
+
+grid-template-columns:1fr;
+
+gap:20px;
+
+width:92%;
+
+}
+
+.card img{
+
+height:220px;
+
+}
+
+.category{
+
+gap:10px;
+
+}
+
+.category button{
+
+padding:12px 20px;
+
+font-size:14px;
+
+}
+
+}
